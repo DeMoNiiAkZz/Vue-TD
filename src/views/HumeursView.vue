@@ -21,7 +21,7 @@ const supprimerHumeur = (index) => {
 </script>
 
 <template>
-    <div class="container mt-5">
+    <div class="container mt-5 vh-100">
         <h1>Les Humeurs</h1>
 
         <!-- champs de saisi d'humeur -->
@@ -44,7 +44,7 @@ const supprimerHumeur = (index) => {
                 <h3>Voici vos humeurs :</h3>
                 <ul class="list-group mt-4">
                     <li v-for="(humeur, index) in listeHumeurs" :key="index" class="list-unstyled" >
-                        <HumeurItem :text="humeur" @supprimer="supprimerHumeur(index)" />
+                        <HumeurItem :HumeurValue="humeur" @supprimer="supprimerHumeur(index)" />
                     </li>
                 </ul>
             </div>
