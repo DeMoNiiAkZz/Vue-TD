@@ -7,20 +7,20 @@ defineProps({
 
 const emit = defineEmits(['messageSent']);
 
-const sendMessage = () => {
+const envoieMessage = () => {
   emit('messageSent', 'Bonjour depuis Message.vue !'); 
 };
 </script>
 
 <template>
-  <div class="message-container">
+  <div class="contenuMessage">
     <h2>{{ message }}</h2>
-    <button @click="sendMessage">Envoyer un message</button> 
+    <button @click="envoieMessage">Envoyer un message</button> 
   </div>
 </template>
 
 <style scoped>
-.message-container h2 {
+.contenuMessage h2 {
   color: blue;
 }
 
@@ -37,3 +37,4 @@ button:hover {
   background-color: #369f75;
 }
 </style>
+
