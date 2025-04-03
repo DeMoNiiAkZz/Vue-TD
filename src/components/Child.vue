@@ -11,6 +11,3 @@
     emit('childEvent', 'Message depuis l\'enfant');  
   };
   </script>
-
-
-  
