@@ -12,4 +12,4 @@ La directive conditionnelle "v-if" permet d'ajouter ou de supprimer un élément
     
 ## 3. Dans quel cas utiliser une directive personnalisée ? 
 
-On peut utiliser une directive personnalisée 
+On peut utiliser une directive personnalisée lorsqu'on souhaite manipuler avec le DOM et que les directives natives ne suffisent pas, on peut utiliser des évènements comme "click" ou "mouse", modifier des propriétés comme "classList" ou "style"
